@@ -4,6 +4,9 @@
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
+echo -e "${GREEN}Waking up DHCP${NC}"
+sudo dhclient
+
 echo -e "${GREEN}Updating package list...${NC}"
 sudo apt update
 
@@ -17,10 +20,10 @@ echo -e "${GREEN}Unzipping Xonotic...${NC}"
 unzip xonotic-0.8.6.zip -d ~/xonotic
 
 echo -e "${GREEN}Installing Xonotic...${NC}"
-cd ~/Xonotic
+cd ~/xonotic
 
 echo -e "${GREEN}Cleaning up...${NC}"
-rm Xonotic-0.8.6.zip
+rm ~/xonotic-0.8.6.zip
 
 echo -e "${GREEN}Xonotic 0.8.6 is now installed.${NC}"
-./xonotic-linux-glx.sh
+~/xonotic/Xonotic/xonotic-linux-glx.sh
