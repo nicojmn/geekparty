@@ -27,6 +27,10 @@ fi
 echo -e "${GREEN}Unzipping Xonotic...${NC}"
 unzip xonotic-0.8.6.zip -d ~/xonotic
 
+echo -e "${GREEN}Making desktop file...${NC}"
+sudo chmod +x xonotic.desktop
+sudo cp xonotic.desktop /usr/share/applications
+
 echo -e "${GREEN}Installing Xonotic...${NC}"
 cd ~/xonotic
 

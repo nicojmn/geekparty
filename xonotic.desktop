@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=2.5
+Encoding=UTF-8
+Name=Xonotic
+Comment=a free open-source first person shooter
+Icon=/home/llnux/xonotic/Xonotic/misc/logos/xonotic_icon.svg
+Exec=/home/llnux/xonotic/Xonotic/xonotic-linux-glx.sh
+Terminal=false
+StartupNotify=false
+Categories=Game;
